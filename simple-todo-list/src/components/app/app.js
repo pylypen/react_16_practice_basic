@@ -131,9 +131,9 @@ export default class App extends Component {
         const filteredData = todoData.filter((item) => {
             for (let i of filterData) {
                 if (i.label === 'Active' && i.status && item.done) {
-                    return false
+                    return false;
                 } else if (i.label === 'Done' && i.status && !item.done) {
-                    return false
+                    return false;
                 }
             }
 
